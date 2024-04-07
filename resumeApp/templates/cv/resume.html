@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+        }
+
+        .resume {
+            background-color: #ffffff;
+            box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        h1, h2, h3, h4, h5 {
+            color: #132437;
+        }
+
+        .section-title {
+            border-bottom: 2px solid #191c20;
+            padding-bottom: 10px;
+            margin-bottom: 20px;    
+        }
+
+        .section-content {
+            margin-bottom: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+    </style>
+    <title>{{ profile.name }} - Resume</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="resume">
+                <h1 class="text-center mb-4">{{ profile.name }}</h1>
+
+                <div class="section">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="section-content">
+                        <p>Email: {{ profile.email }}</p>
+                        <p>Phone: {{ profile.ph_num }}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-content">
+                        <h4>{{ profile.degree }}</h4>
+                        <p>{{ profile.education }}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Skills</h2>
+                    <div class="section-content">
+                        <p>{{ profile.skills }}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-content">
+                        <p>{{ profile.experience }}</p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2 class="section-title">Hobbies</h2>
+                    <div class="section-content">
+                        <p>{{ profile.hobbies }}</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

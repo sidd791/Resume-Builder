@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Create Profile</title>
+</head>
+<body >
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header bg-primary">
+                    <h4 class="mb-0">Create Profile</h4>
+                </div>
+                <div class="card-body" style="background-color: rgb(245, 249, 255);" >
+                    <form method="post">
+                        {% csrf_token %}
+                        
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="ph_num">Phone Number</label>
+                            <input type="tel" class="form-control" id="ph_num" name="ph_num" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="education">Education</label>
+                            <textarea class="form-control" id="education" name="education" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="degree">Degree</label>
+                            <input type="text" class="form-control" id="degree" name="degree" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="skills">Skills</label>
+                            <input type="text" class="form-control" id="skills" name="skills" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="experience">Experience</label>
+                            <textarea class="form-control" id="experience" name="experience" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="hobbies">Hobbies</label>
+                            <textarea class="form-control" id="hobbies" name="hobbies" rows="3" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
